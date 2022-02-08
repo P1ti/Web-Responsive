@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap');
+
+/* font-family: 'Playfair Display', serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.3em;
+}
+
+.hero {
+  min-height: 660px;
+  background: #F3EED9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__text {
+  text-align: center;
+  color: #824936;
+  padding: 1.3rem
+}
+
+.hero__text p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #222C2A;
+}
+
+.hero__text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+}
+
+.f__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.3rem;
+}
+
+.f__container p {
+  font-family: 'Roboto', serif;
+  font-size: 21px;
+  color: #222C2A;
+}
+
+.f__container h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #824936;
+}
+
+.f__container .container__text {
+  display: flex;
+  flex-direction: row;
+  color: #222C2A;
+  gap: 1em;
+  max-width: 1128px;
+}
+
+.s__container, .t__container {
+  width: 100%;
+  padding: 1.3rem;
+  background-color: #222C2A;
+}
+
+.s__container .wrapper, .t__container .wrapper {
+  display: flex;
+  gap: 1em;
+  color: white;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.wrapper h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+}
+
+.wrapper p {
+  font-family: 'Roboto', serif;
+  font-size: 21px;
+}
+
+.t__container {
+  background-color: #824936;
+}
+@media (max-width: 720px) {
+  .f__container .container__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .s__container .wrapper, .t__container .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 314px) {
+  .f__container .container__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .s__container .wrapper, .t__container .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
